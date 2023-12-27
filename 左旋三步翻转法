@@ -22,20 +22,20 @@ void left_move(char* arr,int k)
 {
 	assert(arr);
 	int len = strlen(arr);
-	reverse(arr,arr+k-1);//ÄæĞò×ó±ß
-	reverse(arr+k,arr+len-1);//ÄæĞòÓÒ±ß
-	reverse(arr,arr+len-1);//ÄæĞòÕûÌå
+	reverse(arr,arr+k-1);//é€†åºå·¦è¾¹
+	reverse(arr+k,arr+len-1);//é€†åºå³è¾¹
+	reverse(arr,arr+len-1);//é€†åºæ•´ä½“
 }
 int main(void)
 {
 	char arr[100] = { 0 };
-	puts("ÇëÊäÈëÒ»¸ö×Ö·û´®£º\n");
+	puts("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š\n");
 	gets(arr);
-	puts("ÄãÏë×óĞı¼¸¸ö×Ö·û£º\n");
+	puts("ä½ æƒ³å·¦æ—‹å‡ ä¸ªå­—ç¬¦ï¼š\n");
 	int k;
 	int t = scanf("%d", &k);
 	left_move(arr,k);
-	printf("×óÑ¡%d¸ö×Ö·û´®ºóÎª:\n",k);
+	printf("å·¦é€‰%dä¸ªå­—ç¬¦ä¸²åä¸º:\n",k);
 	puts(arr);
 	return 0;
 }
