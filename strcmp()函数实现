@@ -35,17 +35,17 @@ int main(void)
 	int ret = my_strcmp(arr1, arr2);
 	if (ret == 1)
 	{
-		printf("arr1大");
+		printf("arr1麓贸");
 	}
 	else
 	{
 		if (ret == -1)
 		{
-			printf("arr2大");
+			printf("arr2麓贸");
 		}
 		else
 		{
-			printf("一样大");
+			printf("脪禄脩霉麓贸");
 		}
 	}
 	return 0;
