@@ -21,13 +21,13 @@ int main(void)
 	char zfc1[20];
 	char zfc2[20];
 	int n;
-	puts("请输入一个字符串：\n");
+	puts("璇疯緭鍏ヤ竴涓瓧绗︿覆锛歕n");
 	scanf("%s", zfc1);
-	puts("请输入另一个字符串：\n");
+	puts("璇疯緭鍏ュ彟涓�涓瓧绗︿覆锛歕n");
 	scanf("%s", zfc2);
-	puts("请输入想复制过去的字符个数：\n");
+	puts("璇疯緭鍏ユ兂澶嶅埗杩囧幓鐨勫瓧绗︿釜鏁帮細\n");
 	scanf("%d",&n);
 	my_strncmp(zfc1,zfc2,n);
-	puts("操作结果为：\n");
+	puts("鎿嶄綔缁撴灉涓猴細\n");
 	printf("%s", zfc1);
 }
