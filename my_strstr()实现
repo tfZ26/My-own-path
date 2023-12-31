@@ -40,10 +40,10 @@ int main(void)
 {
 	char zfc1[30] = { 0 };
 	char zfc2[30] = { 0 };
-	puts("²éÕÒ×Ó×Ö·û´®¹¦ÄÜ\n");
-	puts("ÇëÊäÈëÒ»¸ö×Ö·û´®£º->\n");
+	puts("æŸ¥æ‰¾å­å­—ç¬¦ä¸²åŠŸèƒ½\n");
+	puts("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š->\n");
 	gets(zfc1);
-	puts("ÇëÊäÈëÁíÍâÒ»¸ö×Ö·û´®£º->\n");
+	puts("è¯·è¾“å…¥å¦å¤–ä¸€ä¸ªå­—ç¬¦ä¸²ï¼š->\n");
 	gets(zfc2);
 	char* ret = my_strstr(zfc1,zfc2);
 	if (ret != NULL)
@@ -52,7 +52,7 @@ int main(void)
 	}
 	else
 	{
-		printf("²»´æÔÚ\n");
+		printf("ä¸å­˜åœ¨\n");
 	}
 
 
