@@ -1,0 +1,40 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include< stdio.h>
+void* memmove(void* det, const void* src, int k)
+{
+	char* ret = (char*)det;
+	if ((char*) det < (char*)src)
+	{
+		while(k--)
+		{
+
+			*((char*)det) = *((char*)src);
+
+			++(char*)det;
+			++(char*)src;
+	    }
+	}
+	if ((char*)det > (char*)src)
+	{
+		while (k--)
+		{
+
+			*((char*)det + k) = *((char*)src+k);
+		}
+	}
+
+	return ret;
+}
+
+int main(void)
+{
+	int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+	memmove(arr+2,arr,20);
+	int i = 0;
+	for (i=0;i<10;i++)
+	{
+		printf("%d ", arr[i]);
+	}
+
+	return 0;
+}
